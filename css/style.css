@@ -1,0 +1,45 @@
+body {
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: 80px 80px;
+    background-color: hotpink;
+    height: 200px;
+}
+
+#top-social-network {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80px;
+    background-color: khaki;
+}
+
+#top-social-network img{
+    width: 30px;
+    height: 30px;
+    padding: 2.5px;
+}
+
+#logo {
+    grid-column: 3 span 2;
+    width: 100px;
+    background-color: indigo;
+}
+#menu {
+    height: 120px;
+    background-color: lawngreen;
+    grid-column-start: 2;
+    justify-items: start;
+}
+
+.menu-button {
+    font-size: 0.8rem;
+}
