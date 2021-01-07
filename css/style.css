@@ -68,6 +68,7 @@
         justify-self: center;
         grid-column-start: 2;
         grid-row-start: 2;
+        
     }
     
     /* Menu déroulant */
@@ -100,6 +101,8 @@
     #close-menu {
         width: 10px;
         height: 10px;
+        -moz-appearance: button;
+        -webkit-appearance: button;
     }
     
     /* Footer */
