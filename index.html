@@ -9,7 +9,7 @@
         <link href="./css/style.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <header>
+        <header id="deployable-header">
             <a class="language" href="#">EN</a>
             <nav class="social-network" role="presentation">
                 <a href="https://www.facebook.com/antoine.pouj/"><img src="./img/icons/fb.png" alt="Facebook Antoine Poujaud"/></a>
@@ -18,7 +18,7 @@
             </nav>
             <img id="logo" src="./img/logo/FR/Sans fond/Logo sans fond 1920_1080.png" alt="logo Antoine Poujaud Développement Web"/>
             <button id="open-menu"></button>
-            <nav id="menu" role="presentation">
+            <nav class="invisible" id="menu" role="presentation">
                 <ul role="presentation">
                     <a href="#" id="nav-home" class="menu-anchor">Home</a>
                     <a href="#" id="nav-projects" class="menu-anchor">Projects</a>
@@ -73,5 +73,7 @@
             </nav>
 
         </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>

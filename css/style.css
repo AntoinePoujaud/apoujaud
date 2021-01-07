@@ -155,19 +155,15 @@
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 125px 1fr;
-        grid-template-rows: 80px 15px 120px;
+        grid-template-rows: 80px 15px 190px;
         background-color: hotpink;
-        height: 215px;
+        height: auto;
     }
     
     main {
         margin: 0 10px;
     }
-    
-    .invisible {
-        display: none;
-    }
-    
+        
     /* Réseaux sociaux + logo + bouton dérouler */
     
     .language {
@@ -222,10 +218,10 @@
         grid-column: 1;
         grid-column-end: 4;
         grid-row-start: 3;
-        display: flex;
+        display: none;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 120px;
+        height: 190px;
         background-color: lawngreen;
         align-items: center;
     }
@@ -238,8 +234,10 @@
         padding: 5px 0;
     }
     
+    
     .menu-anchor {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+        margin: 5px 0;
     }
     
     #close-menu {

@@ -1,18 +1,15 @@
 // CONCERNE L'APPARITION / DISPARITION DU MENU LORSQUE L'ON 
 // CLIQUE SUR LA FLECHE DESSOUS LE LOGO
 
-const navlinks = document.getElementById("navlinks");
-const navButton = document.getElementById("deploy");
+const navlinks = document.getElementById("menu");
+const navButton = document.getElementById("open-menu");
 
 const triggerNavbar = () => {
-    if(navlinks.classList.contains("invisible")) {
-        navlinks.classList.remove("invisible");
-        invisible = false;
+    if(navlinks.style.display === "none") {
+        navlinks.style.display = "flex";
     }
     else {
-        navlinks.classList.add("invisible");
-        invisible = true;
+        navlinks.style.display = "none";
     }
 }
-
-navButton.addEventListener('click', triggerNavbar);
+    navButton.onclick = triggerNavbar;
