@@ -95,8 +95,6 @@ header .social-network img {
 .close-menu {
     width: 10px;
     height: 10px;
-    justify-self: flex-end;
-    align-self: center;
 }
 
 /* Footer */
