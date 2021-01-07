@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,29 +10,67 @@
     </head>
     <body>
         <header>
-            <nav id="top-social-network" role="presentation">
+            <a class="language" href="#">EN</a>
+            <nav class="social-network" role="presentation">
                 <a href="https://www.facebook.com/antoine.pouj/"><img src="./img/icons/fb.png" alt="Facebook Antoine Poujaud"></a>
-                <a href="https://www.facebook.com/antoine.pouj/"><img src="./img/icons/fb.png" alt="Facebook Antoine Poujaud"></a>
-                <a href="https://www.facebook.com/antoine.pouj/"><img src="./img/icons/fb.png" alt="Facebook Antoine Poujaud"></a>
-                <a href="https://www.facebook.com/antoine.pouj/"><img src="./img/icons/fb.png" alt="Facebook Antoine Poujaud"></a>
+                <a href="https://twitter.com/APoujaud"><img src="./img/icons/twitter.png" alt="Twitter Antoine Poujaud"></a>
+                <a href="https://www.linkedin.com/in/antoine-poujaud/"><img src="./img/icons/linkedin.png" alt="Linked In Antoine Poujaud"></a>
             </nav>
-            <img id="logo" src="./img/logo/Logo sans fond 300_169.png" alt="logo Antoine Poujaud">
-            <button>Deploy navbar menu</button>
+            <img id="logo" src="./img/logo/FR/Sans fond/Logo sans fond 1920_1080.png" alt="logo Antoine Poujaud">
+            <button class="open-menu"></button>
             <nav id="menu" role="presentation">
                 <ul role="presentation">
-                    <a href="#" id="nav-home" class="menu-button">Home</a>
-                    <a href="#" id="nav-projects" class="menu-button">Projects</a>
-                    <a href="#" id="nav-about" class="menu-button">About</a>
-                    <a href="#" id="nav-contact" class="menu-button">Contact</a>
+                    <a href="#" id="nav-home" class="menu-anchor">Home</a>
+                    <a href="#" id="nav-projects" class="menu-anchor">Projects</a>
+                    <a href="#" id="nav-about" class="menu-anchor">About</a>
+                    <a href="#" id="nav-contact" class="menu-anchor">Contact</a>
                 </ul>
+                <button class="close-menu"></button>
             </nav>
         </header>
         
         <main>
+            <section id="welcome">
+                <article>
+                    <h2>Bienvenue sur mon site web</h2>
+                    <p>Bonjour à toi noble voyageur, je m'appelle Antoine Poujaud et tu te trouves actuellement dans mon musée</p>
+                </article>
+            </section>
+            <section id="recent-projects">
+                <h2>Mes derniers travaux</h2>
+                <article class="most-recent-project top">
+                    <div class="img-project"></div>
+                    <p>Pas trop long la description sinon il y a pas la place cimer</p>
+                </article>
 
+                <article class="most-recent-project middle">
+                    <div class="img-project"></div>
+                    <p>Pas trop long la description sinon il y a pas la place cimer</p>
+                </article>
+
+                <article class="most-recent-project bottom">
+                    <div class="img-project"></div>
+                    <p>Pas trop long la description sinon il y a pas la place cimer</p>
+                </article>
+            </section>
+
+            <section id="did-you-know">
+                <figure>
+                    <h4>Le Saviez-Vous ?</h4>
+                    <blockquote>
+                        <p>Le fait d'être arrivé sur ce site à fait au moins une personne heureuse ... moi.</p>
+                    </blockquote>
+                    <figcaption>-Moi-même, <cite>dans ma chambre</cite></figcaption>
+                </figure>                
+            </section>
         </main>
 
         <footer>
+            <nav class="social-network" role="presentation">
+                <a href="https://www.facebook.com/antoine.pouj/"><img src="./img/icons/fb.png" alt="Facebook Antoine Poujaud"></a>
+                <a href="https://twitter.com/APoujaud"><img src="./img/icons/twitter.png" alt="Twitter Antoine Poujaud"></a>
+                <a href="https://www.linkedin.com/in/antoine-poujaud/"><img src="./img/icons/linkedin.png" alt="Linked In Antoine Poujaud"></a>
+            </nav>
 
         </footer>
     </body>
