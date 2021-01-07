@@ -1,4 +1,20 @@
-@media only screen and (min-width: 481px) {
+/* Desktop */
+@media only screen and (min-width: 1601px) {
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+
+}
+
+/* Tablette Paysage */
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* Tablette Portrait */
+@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
     body {
         font-size: 16px;
         margin: 0 auto;
@@ -126,7 +142,8 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+/* Smartphone Portrait */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
     body {
         font-size: 16px;
         margin: 0 auto;
@@ -138,9 +155,9 @@
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 125px 1fr;
-        grid-template-rows: 80px 10px 110px;
+        grid-template-rows: 80px 15px 120px;
         background-color: hotpink;
-        height: 200px;
+        height: 215px;
     }
     
     main {
@@ -193,6 +210,7 @@
     #open-menu {
         width: 10px;
         height: 10px;
+        align-self: center;
         justify-self: center;
         grid-column-start: 2;
         grid-row-start: 2;
@@ -207,7 +225,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 110px;
+        height: 120px;
         background-color: lawngreen;
         align-items: center;
     }
@@ -215,7 +233,6 @@
     #menu ul {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-items: center;
         align-items: center;
         padding: 5px 0;
@@ -228,6 +245,8 @@
     #close-menu {
         width: 10px;
         height: 10px;
+        -moz-appearance: button;
+        -webkit-appearance: button;
     }
     
     /* Footer */
