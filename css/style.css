@@ -1,118 +1,124 @@
-body {
-    font-size: 16px;
-    margin: 0 auto;
-    background-color: grey;
-    box-sizing: border-box;
-}
-
-header {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 125px 1fr;
-    grid-template-rows: 80px 10px 110px;
-    background-color: hotpink;
-    height: 200px;
-}
-
-main {
-    margin: 0 10px;
-}
-
-/* Réseaux sociaux + logo + bouton dérouler */
-
-.language {
-    position:absolute;
-}
-
-header .social-network {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-self: flex-end;
-    justify-content: flex-start;
-    align-content: center;
-    width: 80px;
-    background-color: khaki;
-}
-
-header .social-network a{
-    width: 30px;
-    height: 30px;
-    margin: 5px 5px;
-}
-
-header .social-network img {
-    width: 30px;
-    height: 30px;
-    border-radius: 20%;
-}
-
-#logo {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    justify-self: center;
-    height: 80px;
-    background-color: indigo;
-}
-
-.open-menu {
-    width: 10px;
-    height: 10px;
-    justify-self: center;
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-/* Menu déroulant */
-
-#menu {
-    grid-column: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 110px;
-    background-color: lawngreen;
-    align-items: center;
-}
-
-#menu ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-items: center;
-    align-items: center;
-    padding: 5px 0;
-}
-
-.menu-anchor {
-    font-size: 0.8rem;
-}
-
-.close-menu {
-    width: 10px;
-    height: 10px;
-}
-
-/* Footer */
-
-footer .social-network {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-footer .social-network a{
-    width: 30px;
-    height: 30px;
-    margin: 5px 5px;
-}
-
-footer .social-network img {
-    width: 30px;
-    height: 30px;
-    border-radius: 20%;
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+        margin: 0 auto;
+        background-color: grey;
+        box-sizing: border-box;
+    }
+    
+    header {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 125px 1fr;
+        grid-template-rows: 80px 10px 110px;
+        background-color: hotpink;
+        height: 200px;
+    }
+    
+    main {
+        margin: 0 10px;
+    }
+    
+    .invisible {
+        display: none;
+    }
+    
+    /* Réseaux sociaux + logo + bouton dérouler */
+    
+    .language {
+        position:absolute;
+    }
+    
+    header .social-network {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-self: flex-end;
+        justify-content: flex-start;
+        align-content: center;
+        width: 80px;
+        background-color: khaki;
+    }
+    
+    header .social-network a{
+        width: 30px;
+        height: 30px;
+        margin: 5px 5px;
+    }
+    
+    header .social-network img {
+        width: 30px;
+        height: 30px;
+        border-radius: 20%;
+    }
+    
+    #logo {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-self: center;
+        height: 80px;
+        background-color: indigo;
+    }
+    
+    #open-menu {
+        width: 10px;
+        height: 10px;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    
+    /* Menu déroulant */
+    
+    #menu {
+        grid-column: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 110px;
+        background-color: lawngreen;
+        align-items: center;
+    }
+    
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-items: center;
+        padding: 5px 0;
+    }
+    
+    .menu-anchor {
+        font-size: 0.8rem;
+    }
+    
+    #close-menu {
+        width: 10px;
+        height: 10px;
+    }
+    
+    /* Footer */
+    
+    footer .social-network {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    footer .social-network a{
+        width: 30px;
+        height: 30px;
+        margin: 5px 5px;
+    }
+    
+    footer .social-network img {
+        width: 30px;
+        height: 30px;
+        border-radius: 20%;
+    }
 }
