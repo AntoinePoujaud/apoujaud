@@ -18,6 +18,8 @@ main {
     margin: 0 10px;
 }
 
+/* Réseaux sociaux + logo + bouton dérouler */
+
 .language {
     position:absolute;
 }
@@ -55,16 +57,15 @@ header .social-network img {
     background-color: indigo;
 }
 
-.open-menu, .close-menu {
+.open-menu {
     width: 10px;
     height: 10px;
-}
-
-.open-menu {
     justify-self: center;
     grid-column-start: 2;
     grid-row-start: 2;
 }
+
+/* Menu déroulant */
 
 #menu {
     grid-column: 1;
@@ -87,13 +88,18 @@ header .social-network img {
     padding: 5px 0;
 }
 
-.close-menu {
-    justify-self: center;
-}
-
 .menu-anchor {
     font-size: 0.8rem;
 }
+
+.close-menu {
+    width: 10px;
+    height: 10px;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+/* Footer */
 
 footer .social-network {
     display: flex;
