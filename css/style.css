@@ -150,18 +150,21 @@
         background-color: grey;
         box-sizing: border-box;
     }
-    
     header {
+        width: 100%;
+        background-color: hotpink;
+    }
+    
+    #fixed-header {
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 125px 1fr;
-        grid-template-rows: 80px 15px 190px;
-        background-color: hotpink;
+        grid-template-rows: 80px 15px;
         height: auto;
     }
     
     main {
-        margin: 0 10px;
+        margin: 0 20px;
     }
         
     /* Réseaux sociaux + logo + bouton dérouler */
@@ -218,9 +221,11 @@
         grid-column: 1;
         grid-column-end: 4;
         grid-row-start: 3;
+        position: absolute;
         display: none;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 100%;
         height: 190px;
         background-color: lawngreen;
         align-items: center;
