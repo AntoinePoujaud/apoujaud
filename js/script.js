@@ -5,11 +5,12 @@ const navlinks = document.getElementById("menu");
 const navButton = document.getElementById("open-menu");
 
 const triggerNavbar = () => {
-    if(navlinks.style.display === "none") {
-        navlinks.style.display = "flex";
+    if(navlinks.classList.contains("invisible")) {
+        navlinks.classList.remove('invisible');
     }
     else {
-        navlinks.style.display = "none";
+        navlinks.classList.add('invisible');
     }
+    
 }
     navButton.onclick = triggerNavbar;

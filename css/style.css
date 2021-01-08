@@ -152,7 +152,7 @@
     }
     header {
         width: 100%;
-        background-color: hotpink;
+        background-color: darkgray;
     }
     
     #fixed-header {
@@ -161,33 +161,41 @@
         grid-template-columns: 1fr 125px 1fr;
         grid-template-rows: 80px 15px;
         height: auto;
+        border: 1px solid black;
     }
     
     main {
         margin: 0 20px;
+        height: auto;
     }
         
     /* Réseaux sociaux + logo + bouton dérouler */
     
     .language {
+        top: 5px;
+        left: 5px;
+        width: 16px;
         position: absolute;
+        font-size: 0.7rem;
     }
     
     header .social-network {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        align-self: center;
         justify-self: flex-end;
-        justify-content: flex-start;
+        justify-content: center;
         align-content: center;
+        padding-top: 15px;
+        margin: 0 5px;
         width: 80px;
-        background-color: khaki;
     }
     
     header .social-network a{
         width: 30px;
         height: 30px;
-        margin: 5px 5px;
+        margin: 5px 8px;
     }
     
     header .social-network img {
@@ -203,7 +211,7 @@
         grid-row-end: 3;
         justify-self: center;
         height: 80px;
-        background-color: indigo;
+        padding-left: 50px;
     }
     
     #open-menu {
@@ -216,19 +224,24 @@
     }
     
     /* Menu déroulant */
+
+    .invisible {
+        display: none !important;
+    }
     
     #menu {
         grid-column: 1;
         grid-column-end: 4;
         grid-row-start: 3;
         position: absolute;
-        display: none;
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
         height: 190px;
-        background-color: lawngreen;
+        background-color: white;
         align-items: center;
+        border: 1px solid black;
     }
     
     #menu ul {
@@ -252,23 +265,101 @@
         -webkit-appearance: button;
     }
     
+    /* Most Recent Projects */
+
+    #recent-projects {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px black solid;
+    }
+
+    #recent-projects .most-recent-project{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .img-project {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+    }
+
+    #project-top {
+        background-image: url("../img/logo/FR/Fond\ blanc/Logo\ fond\ blanc\ 1920_1080.PNG");
+        background-position: 50%;
+    }
+
+    #project-middle {
+        background-image: url("../img/projects/sharpsheperdgames.PNG");
+        background-position: 50%;
+    }
+
+    #project-bottom {
+        background-image: url("../img/projects/portfoliomarion.PNG");
+        background-position: 50%;
+    }
+
+    .resume {
+        width: 80%;
+        justify-self: center;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+    }
+
+    /* Section Did You Know */
+
+    #did-you-know {
+        border: 1px solid black;
+        margin-bottom: 20px;
+    }
+
+
     /* Footer */
     
+    footer {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        border: 1px solid black;
+    }
+
     footer .social-network {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;   
     }
     
     footer .social-network a{
-        width: 30px;
-        height: 30px;
-        margin: 5px 5px;
+        width: 15px;
+        height: 15px;
+        margin: 5px 10px;
     }
     
     footer .social-network img {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
         border-radius: 20%;
+    }
+
+    footer h4 {
+        margin: 0 10px;
+        font-size: 0.8rem;
+        font-weight: lighter;
+        font-style: italic;
+        justify-self: flex-end;
+        align-self: center;
     }
 }
