@@ -203,15 +203,21 @@
         height: 30px;
         border-radius: 20%;
     }
+
     
     #logo {
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 1;
-        grid-row-end: 3;
+        grid-row-end: 2;
         justify-self: center;
+        margin-left: 50px;
+        
+    }
+
+    #logo img {
         height: 80px;
-        padding-left: 50px;
+        
     }
     
     #open-menu {
